@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "node ace serve --watch",
-    "build": "node ace build --production",
-    "start": "node server.js",
+    "dev": "node init && node ace serve --watch",
+    "build": "node init && node ace build --production",
+    "start": "node init && node server.js",
     "test": "node ace test",
     "lint": "eslint . --ext=.ts",
     "format": "prettier --write ."
@@ -59,7 +59,9 @@
     "@adonisjs/core": "^5.9.0",
     "@adonisjs/repl": "^3.1.11",
     "axios": "^1.6.2",
+    "dotenv": "^8.2.0",
     "jsonwebtoken": "^9.0.2",
+    "node-fetch": "^3.3.2",
     "octokit": "^3.1.2",
     "openssl-nodejs": "^1.0.5",
     "proxy-addr": "^2.0.7",

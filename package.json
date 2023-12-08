@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "node ace serve --watch",
-    "build": "node ace build --production",
-    "start": "node server.js",
+    "dev": "node api.js && node ace serve --watch",
+    "build": "node api.js && node ace build --production",
+    "start": "node api.js && node server.js",
     "test": "node ace test",
     "lint": "eslint . --ext=.ts",
     "format": "prettier --write ."
